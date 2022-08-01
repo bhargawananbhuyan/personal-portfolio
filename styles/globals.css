@@ -1,26 +1,38 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 * {
-  box-sizing: border-box;
+	@apply font-inter;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.contact_form {
+	@apply grid gap-3.5 md:grid-cols-2;
+}
+.contact_form label {
+	@apply text-sm inline-block mb-1.5;
+}
+.contact_form input,
+.contact_form textarea {
+	@apply border block w-full outline-none rounded px-3.5 py-3 focus:ring-2 focus:border-blue-400 transition-all;
+}
+.contact_form textarea {
+	@apply resize-none;
+}
+.contact_form .input_error {
+	@apply focus:border-red-500 ring-2 ring-red-400 transition-all;
+}
+.contact_form .input_error_text {
+	@apply text-red-500 inline-block mt-1.5;
+}
+
+.sh_btn {
+	@apply shadow-xl hover:shadow-none transition-all;
+}
+
+.ham {
+	@apply absolute top-[2.275rem] right-4 grid gap-y-2 p-2.5;
+}
+.ham span {
+	@apply w-[1.75rem] h-[1.5px] bg-gray-800;
 }
