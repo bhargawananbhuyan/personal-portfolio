@@ -44,12 +44,17 @@ const Layout: React.FC<PropsWithChildren<LayoutProps>> = (props) => {
 				<footer className='pt-20 pb-12 grid gap-y-3.5 md:flex items-center justify-between'>
 					<div>© 2022, All rights reserved</div>
 					<div className='text-xl md:text-2xl flex gap-x-5'>
-						<a href='https://github.com/bhargawananbhuyan' target='_blank'>
+						<a
+							href='https://github.com/bhargawananbhuyan'
+							target='_blank'
+							rel='noreferrer'
+						>
 							<FontAwesomeIcon icon={faGithub} title='github' />
 						</a>
 						<a
 							href='https://www.linkedin.com/in/bhargawanan-bhuyan-b60929194'
 							target='_blank'
+							rel='noreferrer'
 						>
 							<FontAwesomeIcon icon={faLinkedinIn} title='linkedin' />
 						</a>

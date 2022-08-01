@@ -17,12 +17,13 @@ const Index: NextPage = () => {
 					web and mobile platforms.
 				</p>
 				<div className='mt-8 text-2xl flex gap-x-5'>
-					<a href='https://github.com/bhargawananbhuyan' target='_blank'>
+					<a href='https://github.com/bhargawananbhuyan' target='_blank' rel='noreferrer'>
 						<FontAwesomeIcon icon={faGithub} title='github' />
 					</a>
 					<a
 						href='https://www.linkedin.com/in/bhargawanan-bhuyan-b60929194'
 						target='_blank'
+						rel='noreferrer'
 					>
 						<FontAwesomeIcon icon={faLinkedinIn} title='linkedin' />
 					</a>
@@ -64,12 +65,14 @@ const Index: NextPage = () => {
 										<a
 											href='https://github.com/bhargawananbhuyan'
 											target='_blank'
+											rel='noreferrer'
 										>
 											<FontAwesomeIcon icon={faGithub} title='code' />
 										</a>
 										<a
 											href='https://github.com/bhargawananbhuyan'
 											target='_blank'
+											rel='noreferrer'
 										>
 											<FontAwesomeIcon
 												icon={faArrowUpRightFromSquare}

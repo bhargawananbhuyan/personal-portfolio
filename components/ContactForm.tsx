@@ -36,7 +36,9 @@ const ContactForm: React.FC = () => {
 			{submittedName && (
 				<div className='mb-5 p-3.5 bg-green-500 text-white font-semibold rounded flex items-center gap-x-2.5'>
 					<FontAwesomeIcon icon={faCheckCircle} />
-					<small>Thanks for dropping by {submittedName}. I'll get back shortly.</small>
+					<small>
+						Thanks for dropping by {submittedName}. I&apos;ll get back shortly.
+					</small>
 				</div>
 			)}
 			<form className='contact_form' onSubmit={formik.handleSubmit}>
