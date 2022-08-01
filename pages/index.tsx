@@ -2,6 +2,7 @@ import { faGithub, faLinkedinIn } from '@fortawesome/free-brands-svg-icons'
 import { faArrowUpRightFromSquare, faEnvelope } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import type { GetStaticProps, NextPage } from 'next'
+import Link from 'next/link'
 import ContactForm from '../components/ContactForm'
 import Layout from '../components/Layout'
 
@@ -16,13 +17,16 @@ const Index: NextPage = () => {
 					web and mobile platforms.
 				</p>
 				<div className='mt-8 text-2xl flex gap-x-5'>
-					<a href='/'>
+					<a href='https://github.com/bhargawananbhuyan' target='_blank'>
 						<FontAwesomeIcon icon={faGithub} title='github' />
 					</a>
-					<a href='/'>
+					<a
+						href='https://www.linkedin.com/in/bhargawanan-bhuyan-b60929194'
+						target='_blank'
+					>
 						<FontAwesomeIcon icon={faLinkedinIn} title='linkedin' />
 					</a>
-					<a href='/'>
+					<a href='mailto:bhargawanan@gmail.com'>
 						<FontAwesomeIcon icon={faEnvelope} title='mail' />
 					</a>
 				</div>
@@ -37,17 +41,17 @@ const Index: NextPage = () => {
 					>
 						Hire me
 					</button>
-					<a href='/' className='underline underline-offset-2 text-blue-500'>
-						Resume
-					</a>
+					<Link href='/'>
+						<a className='underline underline-offset-2 text-blue-500'>Resume</a>
+					</Link>
 				</div>
 			</section>
 			<section className='mt-20'>
 				<div className='mb-8'>
 					<h1 className='text-2xl font-extrabold mb-2.5'>Recent Projects</h1>
-					<a href='/' className='underline underline-offset-2'>
-						View all
-					</a>
+					<Link href='/'>
+						<a className='underline underline-offset-2'>View all</a>
+					</Link>
 				</div>
 				<div className='grid md:grid-cols-2 gap-8'>
 					{Array.from(Array(6).keys()).map((i) => (
@@ -57,10 +61,16 @@ const Index: NextPage = () => {
 								<div className='flex items-center justify-between'>
 									<div className='font-bold text-lg'>Lorem ipsum</div>
 									<div className='flex gap-x-3.5 text-xl'>
-										<a href='/'>
+										<a
+											href='https://github.com/bhargawananbhuyan'
+											target='_blank'
+										>
 											<FontAwesomeIcon icon={faGithub} title='code' />
 										</a>
-										<a href='/'>
+										<a
+											href='https://github.com/bhargawananbhuyan'
+											target='_blank'
+										>
 											<FontAwesomeIcon
 												icon={faArrowUpRightFromSquare}
 												title='live demo'
@@ -93,9 +103,9 @@ const Index: NextPage = () => {
 			<div className='my-16'>
 				<div className='mb-8 '>
 					<h1 className='text-2xl font-extrabold mb-2.5'>Recent articles</h1>
-					<a href='/' className='underline underline-offset-2'>
-						View all
-					</a>
+					<Link href='/'>
+						<a className='underline underline-offset-2'>View all</a>
+					</Link>
 				</div>
 				<div className='grid gap-y-8'>
 					{[
@@ -116,9 +126,9 @@ const Index: NextPage = () => {
 									dignissimos, perferendis placeat architecto rerum officiis
 									quisquam.
 								</p>
-								<a href='/' className='mt-1.5'>
-									Read more
-								</a>
+								<Link href='/'>
+									<a className='mt-1.5'>Read more</a>
+								</Link>
 							</section>
 						</section>
 					))}
