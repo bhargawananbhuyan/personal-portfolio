@@ -36,3 +36,7 @@
 .ham span {
 	@apply w-[1.75rem] h-[1.5px] bg-gray-800;
 }
+
+.hobbylist li {
+	@apply list-disc;
+}

@@ -29,13 +29,13 @@ const Layout: React.FC<PropsWithChildren<LayoutProps>> = (props) => {
 					</div>
 
 					<nav className='gap-x-6 hidden md:flex'>
-						<Link href='/'>
+						<Link href='/blogs'>
 							<a>Blogs</a>
 						</Link>
-						<Link href='/'>
+						<Link href='/projects'>
 							<a>Projects</a>
 						</Link>
-						<Link href='/'>
+						<Link href='/about'>
 							<a>About</a>
 						</Link>
 					</nav>

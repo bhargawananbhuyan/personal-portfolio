@@ -8,11 +8,11 @@ import Layout from '../components/Layout'
 
 const Index: NextPage = () => {
 	return (
-		<Layout title='Bhargawanan Bhuyan'>
+		<Layout title='Home | Bhargawanan Bhuyan'>
 			<section className='my-8'>
 				<h1>Hi there 👋</h1>
 				<p className='mt-5 leading-relaxed'>
-					I&apos;m Bhargawanan Bhuyan. I&apos;m freelance full-stack developer and
+					I&apos;m Bhargawanan Bhuyan. I&apos;m a freelance full-stack developer and
 					blogger. I specialize in turning ideas into interactive digital experiences in
 					web and mobile platforms.
 				</p>
